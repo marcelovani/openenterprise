@@ -5,5 +5,6 @@
 #drush make build-openenterprise.make
 
 git clone https://github.com/marcelovani/openenterprise.git
-cd scripts
-#drush make --prepare-install openenterprise.make folder_of_your_site
+cd openenterprise/scripts
+mkdir /var/www/openenterprise
+drush make --prepare-install openenterprise.make /var/www/openenterprise
