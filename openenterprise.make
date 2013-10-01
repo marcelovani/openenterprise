@@ -12,7 +12,7 @@ core = 7.x
 api = 2
 
 ; drupal core latest release of specified core = number.x
-projects[] = drupal
+;projects[] = drupal
 
 projects[openenterprise][type] = profile
 projects[openenterprise][download][type] = git
