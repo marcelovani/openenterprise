@@ -6,5 +6,6 @@
 
 git clone https://github.com/marcelovani/openenterprise.git
 cd openenterprise
-mkdir /var/www/openenterprise
+sudo mkdir /var/www/openenterprise
+sudo chmod 777 /var/www/openenterprise
 drush make --prepare-install openenterprise.make /var/www/openenterprise
