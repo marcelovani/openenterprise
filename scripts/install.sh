@@ -4,6 +4,11 @@
 #cd openenterprise
 #drush make build-openenterprise.make
 
+# Build Distro.
 git clone https://github.com/marcelovani/openenterprise.git
 cd openenterprise
 sudo drush make --prepare-install openenterprise.make /var/www/openenterprise
+
+# Create the drupal database.
+mysql -h localhost -uroot -proot -e "create database openenterprise;"
+
