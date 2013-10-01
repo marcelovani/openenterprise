@@ -12,3 +12,6 @@ sudo drush make --prepare-install openenterprise.make /var/www/openenterprise
 # Create the drupal database.
 mysql -h localhost -uroot -proot -e "create database openenterprise;"
 
+# Install drupal.
+cd /var/www/openterprise
+drush site-install openenterprise --account-name=admin --account-pass=admin --db-url=mysql://root:root@localhost/openenterprise -y
